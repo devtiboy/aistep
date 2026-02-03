@@ -1,0 +1,11 @@
+div {
+    font-size: 50px;
+    background-color: rgb(60, 14, 124);
+    padding: 20px;
+}
+
+span {
+    font-size: 30px;
+    background-color: blue;
+    /* padding: 20px; */
+}
