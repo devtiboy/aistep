@@ -1,3 +1,4 @@
+@charset "utf-8";
 div {
     font-size: 50px;
     background-color: rgb(60, 14, 124);
@@ -8,4 +9,138 @@ span {
     font-size: 30px;
     background-color: blue;
     /* padding: 20px; */
+}
+
+.hide {
+    /* 1. 영역은 차지하되 눈에만 안 보임 */
+    visibility: hidden;     
+    /* 2. 혹시 모를 클릭이나 이벤트 방지 */
+    pointer-events: none;
+    /* 글자색을 투명하게 */
+    color: transparent;
+    /* 드래그 방지 */
+    user-select: none;
+}
+
+#header {
+    position: relative;
+}
+
+.headernavi {
+    position:absolute;
+    right: 35px;
+    top:18px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    background-color: rgb(104, 143, 108);
+}
+
+.hide {
+    visibility: hidden;     
+    pointer-events: none;
+    color: transparent;
+    user-select: none;
+}
+
+#wrap {
+    width: 800px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+#header {
+    position: relative;
+}
+
+.headernavi {
+    position:absolute;
+    right: 30px;
+    top:20px;
+}
+
+.logoimg a {
+    display: block;
+    height: 80px;
+    background: url(../images/mylogo.png) no-repeat;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+}
+
+/* 아래 신규 */
+.mainnavi {
+    padding-left: 50px;
+    background-color: #005b9b;
+}
+
+.mainnavi::after {
+    content: '';
+    display:block;
+    clear:both;
+}
+
+.mainnavi li {
+    float: left;
+    list-style-type: none;
+}
+
+.mainnavi li a {
+    display: block;
+    padding: 0 13px;
+    background-color: #005b9b;
+    color:#ffffff;
+    font:bold 16px/40px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.mainnavi li a:hover {
+    color:#660000;
+    background-color: #ffcc00;
+}
+
+.headernavi dd {
+    float:left;
+    padding-right: 11px;
+    margin-right: 10px;
+}
+
+.logoimg {
+    padding: 12px 0 12px 26px;
+}
+
+.snb {
+    float: left;
+    width: 170px;
+}
+
+#contents {
+    float: right;
+    width: 560px;
+}
+
+#container::after{
+    content:'';
+    display: block;
+    clear: both;
 }

@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+body {
+    background-color: rgb(104, 143, 108);
+}
+
+.hide {
+    visibility: hidden;     
+    pointer-events: none;
+    color: transparent;
+    user-select: none;
+}
+
+#wrap {
+    width: 800px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+#header {
+    position: relative;
+}
+
+.headernavi {
+    position:absolute;
+    right: 30px;
+    top:20px;
+}
+
+.logoimg a {
+    display: block;
+    height: 80px;
+    background: url(../images/mylogo.png) no-repeat;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+}
+
+/* 아래 신규 */
+.mainnavi {
+    padding-left: 50px;
+    background-color: #005b9b;
+    display:flex;
+    list-style-type: none;
+}
+
+/* .mainnavi::after {
+    content: ' ';
+    display:block;
+    clear:both;
+} */
+
+.mainnavi li {
+    /* float: left; */
+    /* list-style-type: none; */
+    padding: 10px 25px;
+}
+
+.mainnavi li a {
+    color:#ffffff;
+    font:bold 16px/40px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.mainnavi li a:hover {
+    color:#ffcc00;
+    background-color: #005b9b;
+}
+
+.headernavi dd {
+    /* float:left; */
+    display:flex;
+    padding-right: 11px;
+    margin-right: 10px;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+}
+.snb { width: 170px; }
+#contents { width: 560px; }
